@@ -7,50 +7,76 @@
 </head>
 <body>
     <h1>Contact form</h1>
-    <!--Basic Text-->
-    <form action="">
-    <table>
-        <tr>
-            <td><label for="">Username</label></td>
-            <td><input type="text" name="" id=""></td>
-        </tr>
-        <!--Email with validation-->
-        <tr>
-            <td><label for="">Email</label></td>
-            <td><input type="email" name="email" id=""></td>
-        </tr>
-<!--Password hidden -->
-        <tr>
-            <td><label for="">Password</label></td>
-            <td><input type="password" name="password" id=""></td>
-        </tr>
-        <!--phone number-->
-        <tr>
-            <td><label for="">Phone</label></td>
-            <td><input type="tel" name="phone" id="phone"></td>
-        </tr>
-        <!-- Website-->
-         <tr><
-         <td><label for="">Website</label></td>
-         <td><input type="URL" name="website" id="website"></td>
-         </tr>
-         <!-- Multiline text area -->
-          <tr>
-            <td><label for="Message">Message</label></td>
-            <td><textarea name="message" id="message" rows="4"></textarea></td>
-          </tr>
-          <!--Radio Button-->
-          <tr>
-            <td>grade</td>
-            <td>
-                <label><input type="radio" name="grade" value="9">9th Grade</label>
-                <label><input type="radio" name="grade" value="10">10th Grade</label>
-                <label><input type="radio" name="grade" value="11">11th Grade</label>
-            </td>
-          </tr>
-          <!--Select drop down-->
 
-    </table>
+    <!-- ✅ Form tag was self-closing before — now properly wraps the form elements -->
+    <form action="results.html" method="GET">
+        <!-- Basic Text -->
+        <table>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td><input type="text" name="username" id="username"></td>
+            </tr>
+
+            <!-- Email with validation -->
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+
+            <!-- Password hidden -->
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+
+            <!-- Phone number -->
+            <tr>
+                <td><label for="phone">Phone</label></td>
+                <td><input type="tel" name="phone" id="phone"></td>
+            </tr>
+
+            <!-- Website -->
+            <tr>
+                <td><label for="website">Website</label></td>
+                <td><input type="url" name="website" id="website"></td>
+            </tr>
+
+            <!-- Multiline text area -->
+            <tr>
+                <td><label for="message">Message</label></td>
+                <td><textarea name="message" id="message" rows="4"></textarea></td>
+            </tr>
+
+            <!-- Radio Buttons -->
+            <tr>
+                <td>Grade</td>
+                <td>
+                    <label><input type="radio" name="grade" value="9">9th Grade</label>
+                    <label><input type="radio" name="grade" value="10">10th Grade</label>
+                    <label><input type="radio" name="grade" value="11">11th Grade</label>
+                </td>
+            </tr>
+
+            <!-- Select Dropdown -->
+            <tr>
+                <td><label for="sports">Select:</label></td>
+                <td>
+                    <select name="sports" id="sports">
+                        <option value="" selected disabled>Select a sport...</option>
+                        <option value="soccer">Soccer</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="baseball">Baseball</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Submit Button -->
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>
